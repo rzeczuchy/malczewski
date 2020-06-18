@@ -21,7 +21,7 @@
     <title>Malczewski</title>
   </head>
   <body>
-    <header>
+    <header class="hero-gallery">
       <div class="container">
         <nav>
           <h1 class="brand"><a href="index.html">Malczewski</a></h1>
@@ -30,29 +30,26 @@
             <li><a href="bio.html">Życiorys</a></li>
           </ul>
         </nav>
+        <div class="hero-text">
+          <h1
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            data-aos-offset="0"
+          >
+            Galeria
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+            data-aos-offset="0"
+          >
+            Lorem ipsum
+          </p>
+        </div>
       </div>
     </header>
-
-    <div class="hero-home">
-      <div class="hero-text">
-        <h1
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-          data-aos-offset="0"
-        >
-          Jacek Malczewski
-        </h1>
-        <p
-          data-aos="fade-up"
-          data-aos-delay="600"
-          data-aos-duration="1000"
-          data-aos-offset="0"
-        >
-          W Pracowni Malarza
-        </p>
-      </div>
-    </div>
 
     <!-- Animate on Scroll scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -62,5 +59,7 @@
         duration: 1000,
       });
     </script>
+    <!-- Masonry script -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   </body>
 </html>
