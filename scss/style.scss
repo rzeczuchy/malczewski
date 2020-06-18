@@ -11,6 +11,7 @@ body,
 html {
   background-color: $light;
   font-family: $font-stack;
+  font-size: $font-size;
   color: $dark;
   min-height: 100%;
   scroll-behavior: smooth;
@@ -41,7 +42,7 @@ header {
     }
 
     li {
-      padding: 15px;
+      padding: 0 15px;
     }
 
     a {
@@ -56,10 +57,82 @@ header {
   }
 }
 
+footer {
+  background-color: $dark;
+  color: $primary;
+  background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url("../images/skowronek.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  p {
+    font-weight: lighter;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    color: $highlight;
+  }
+}
+
 .container {
-  max-width: 1000px;
-  padding: 15px;
+  max-width: 900px;
+  padding: 20px;
   margin: 0 auto;
+
+  .text-content {
+    margin: 30px 0;
+
+    p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .float-left {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin-bottom: 5px;
+
+      .label {
+        color: #888;
+      }
+    }
+
+    .image-fw {
+      margin: 20px 0;
+      width: 100%;
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.grid {
+  margin: 0 auto;
+
+  .grid-item {
+    width: 50%;
+    padding: 5px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .hero {
@@ -84,6 +157,7 @@ header {
     }
 
     p {
+      text-align: center;
       margin: 10px 0;
     }
   }
