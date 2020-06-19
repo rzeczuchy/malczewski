@@ -68,6 +68,15 @@ footer a:hover {
   color: #d7e7dc;
 }
 
+a {
+  text-decoration: none;
+  color: #71aa82;
+}
+
+a:hover {
+  color: #b1d0ba;
+}
+
 .container {
   max-width: 900px;
   padding: 20px;
@@ -83,6 +92,11 @@ footer a:hover {
 .container .text-content .float-left {
   float: left;
   margin-right: 10px;
+  max-width: 250px;
+}
+.container .text-content .float-left img {
+  width: 100%;
+  height: auto;
 }
 .container .text-content .subtitle {
   text-align: center;
@@ -99,9 +113,21 @@ footer a:hover {
 .container .text-content .image-fw img {
   width: 100%;
 }
+.container .text-content .sources hr {
+  max-width: 50px;
+  margin: 25px 0 10px 0;
+  border: 1px solid #888;
+}
+.container .text-content .sources p {
+  margin-bottom: 0;
+}
+.container .text-content .sources ul {
+  list-style-type: none;
+}
 
 .grid {
   margin: 0 auto;
+  max-width: 1600px;
 }
 .grid .grid-item {
   width: 50%;

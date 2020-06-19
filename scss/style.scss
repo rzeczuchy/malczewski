@@ -82,6 +82,15 @@ footer {
   }
 }
 
+a {
+  text-decoration: none;
+  color: darken($primary, 20);
+}
+
+a:hover {
+  color: $primary;
+}
+
 .container {
   max-width: 900px;
   padding: 20px;
@@ -98,6 +107,12 @@ footer {
     .float-left {
       float: left;
       margin-right: 10px;
+      max-width: 250px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
 
     .subtitle {
@@ -105,7 +120,7 @@ footer {
       margin-bottom: 5px;
 
       .label {
-        color: #888;
+        color: $gray;
       }
     }
 
@@ -118,11 +133,28 @@ footer {
         width: 100%;
       }
     }
+
+    .sources {
+      hr {
+        max-width: 50px;
+        margin: 25px 0 10px 0;
+        border: 1px solid $gray;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+    }
   }
 }
 
 .grid {
   margin: 0 auto;
+  max-width: 1600px;
 
   .grid-item {
     width: 50%;
