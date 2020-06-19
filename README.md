@@ -1,2 +1,3 @@
 # malczewski
-Fanpage and gallery for Jacek Malczewski's art.
+
+Website and gallery dedicated to Jacek Malczewski's art.
