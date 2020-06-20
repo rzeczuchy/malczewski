@@ -131,6 +131,7 @@ a:hover {
 }
 .grid .grid-item {
   width: 50%;
+  height: auto;
   padding: 5px;
 }
 .grid .grid-item img {
@@ -183,6 +184,31 @@ a:hover {
 
 .hero-bio {
   background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../images/z_gorgonami.jpg");
+}
+
+@media (max-width: 700px) {
+  header nav {
+    display: block;
+    text-align: center;
+  }
+  header nav ul {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid .grid-item {
+    width: 100%;
+  }
+
+  .hero-inner, .hero-gallery, .hero-bio {
+    height: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .container .text-content .float-left {
+    float: none;
+    margin: 20px auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
