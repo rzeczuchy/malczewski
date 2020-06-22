@@ -157,5 +157,13 @@
     </script>
     <!-- Masonry script -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script>
+      // Reloading Masonry after images loaded
+      var grid = document.querySelector(".grid");
+      var msnry = new Masonry(grid);
+      setTimeout(() => {
+        msnry.layout();
+      }, 2000);
+    </script>
   </body>
 </html>
